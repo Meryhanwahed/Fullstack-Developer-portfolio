@@ -1,0 +1,109 @@
+.contact-section {
+  background-color: #0b0e14;
+  color: #fff;
+}
+
+.contact-info-card {
+  padding: 30px;
+background: rgba(255, 255, 255, 0.05); /* زودنا الشفافية شوية عشان يبرز */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #22d3ee;
+  font-size: 1.1rem;
+}
+
+/* Form Inputs Styling */
+.custom-input {
+  background: rgba(255, 255, 255, 0.07) !important; /* خلفية أفتح شوية */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important; /* لون الكتابة جوه الـ Input */
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.custom-input::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+
+.custom-input:focus {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: #22d3ee !important;
+  outline: none;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.2);
+}
+
+/* Glow Effect Submit Button */
+.btn-glow-submit {
+  background: #22d3ee;
+   color: #0b0e14; /* الكتابة جوه الزرار غامقة عشان التباين */  font-weight: 700;
+  padding: 12px 35px;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+.btn-glow-submit:hover {
+  background: #ffffff;
+  color: #22d3ee;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(34, 211, 238, 0.6);
+}
+.social-link {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: #22d3ee;
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+}
+
+/* العناوين الرئيسية */
+.section-title {
+  color: #ffffff !important;
+  font-weight: 800;
+}
+
+.section-subtitle {
+  color: #94a3b8; /* رمادي فاتح متناسب مع الخلفية */
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #22d3ee; /* اللون السماوي المضيء */
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
+}
+
+.contact-info-card h3 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-info-card p {
+  color: #cbd5e1; /* رمادي فاتح جداً مقروء */
+}
+
+.info-item span {
+  color: #ffffff; /* الإيميل لازم يكون أبيض صريح */
+  font-weight: 500;
+}
+
+.social-box h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}

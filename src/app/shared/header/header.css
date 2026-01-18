@@ -1,0 +1,57 @@
+/* التصميم الأساسي للـ Navbar */
+.custom-nav {
+  padding: 1.5rem 0;
+  transition: all 0.4s ease-in-out;
+  background: transparent;
+}
+
+/* التأثير عند عمل Scroll */
+.custom-nav.scrolled {
+  padding: 0.8rem 0;
+  background: rgba(11, 14, 20, 0.8); /* لون غامق شفاف */
+  backdrop-filter: blur(15px); /* تأثير الضبابية */
+  border-bottom: 1px solid rgba(34, 211, 238, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* الـ Logo */
+.logo {
+  color: #ffffff !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+.logo .dot {
+  color: #22d3ee; /* لون Cyan */
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+}
+
+/* الروابط */
+.nav-link {
+  color: #cbd5e1 !important;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #22d3ee !important;
+}
+
+/* زرار Let's Talk */
+.btn-outline-cyan {
+  color: #22d3ee;
+  border: 1px solid #22d3ee;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline-cyan:hover {
+  background: #22d3ee;
+  color: #0b0e14;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+}

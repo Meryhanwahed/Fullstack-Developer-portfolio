@@ -1,0 +1,62 @@
+.footer-section {
+  background-color: #0b0e14; /* نفس لون الخلفية الأساسي */
+  padding: 60px 0 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.footer-logo .dot {
+  color: #22d3ee;
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+}
+
+.tagline {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Social Media Styles */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #cbd5e1;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.social-icon:hover {
+  color: #22d3ee;
+  transform: translateY(-5px);
+  text-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
+}
+
+/* Copyright Styles */
+.copyright {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.copyright span {
+  color: #f8fafc;
+  font-weight: 500;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 40px 0 20px;
+  }
+}

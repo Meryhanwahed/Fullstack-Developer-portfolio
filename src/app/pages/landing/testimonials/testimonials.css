@@ -1,0 +1,96 @@
+.testimonials-section {
+  background-color: #0b0e14;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.highlight {
+  color: #22d3ee;
+}
+
+.section-subtitle {
+  color: #94a3b8;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  position: relative;
+  height: 100%;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(34, 211, 238, 0.3);
+  background: rgba(34, 211, 238, 0.05);
+}
+
+.quote-icon {
+  font-size: 2.5rem;
+  color: rgba(34, 211, 238, 0.2);
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  color: #cbd5e1;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+/* Client Info Area */
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #22d3ee;
+}
+
+.client-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-name {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.client-role {
+  color: #22d3ee;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Decorative Glow Effect */
+.card-glow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.1), transparent 70%);
+  pointer-events: none;
+}

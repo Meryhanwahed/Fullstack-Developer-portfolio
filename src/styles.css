@@ -1,0 +1,92 @@
+:root {
+  --bg-dark: #0b0e14;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --primary-cyan: #22d3ee;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. الإعدادات العامة للجسم (Body) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden; /* منع السكرول العرضي */
+}
+
+/* 3. تنعيم السكرول (Smooth Scrolling) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 4. تخصيص شكل الـ Scrollbar عشان يكون شيك */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-cyan);
+}
+
+/* 5. تنسيقات عامة للعناوين */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem); /* حجم مرن للموبايل والشاشة */
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: var(--primary-cyan);
+  text-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
+}
+
+/* 6. تأثيرات عامة للروابط والأزرار */
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* 7. كلاسات مساعدة (Utility Classes) */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* أنيميشن بسيط للظهور */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 8. تظبيط الـ Selection (لما اليوزر يحدد نص بالماوس) */
+::selection {
+  background-color: var(--primary-cyan);
+  color: var(--bg-dark);
+}
