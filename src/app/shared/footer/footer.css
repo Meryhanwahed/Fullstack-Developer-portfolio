@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: #0b0e14; /* نفس لون الخلفية الأساسي */
+  background-color: #0b0e14; 
   padding: 60px 0 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -22,7 +22,6 @@
   font-size: 0.9rem;
 }
 
-/* Social Media Styles */
 .social-links {
   display: flex;
   justify-content: center;
@@ -42,7 +41,6 @@
   text-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
 }
 
-/* Copyright Styles */
 .copyright {
   color: #64748b;
   font-size: 0.85rem;
@@ -54,7 +52,6 @@
   font-weight: 500;
 }
 
-/* Responsive adjustment */
 @media (max-width: 768px) {
   .footer-section {
     padding: 40px 0 20px;

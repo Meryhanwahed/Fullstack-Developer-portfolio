@@ -17,7 +17,6 @@
   color: #94a3b8;
 }
 
-/* تصميم الـ Card */
 .skill-card {
   position: relative;
   background: rgba(255, 255, 255, 0.03);
@@ -28,7 +27,6 @@
   overflow: hidden;
   transition: all 0.4s ease;
   backdrop-filter: blur(10px);
-  /* حركة الـ Floating المستمرة */
   animation: floating 4s infinite ease-in-out;
 }
 
@@ -43,7 +41,6 @@
   background: rgba(34, 211, 238, 0.05);
 }
 
-/* توهج خلفية الكارد */
 .card-glow {
   position: absolute;
   top: 0;

@@ -11,7 +11,6 @@ export class Header{
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    // لو المستخدم نزل أكتر من 50 بكسل، غير الحالة
     this.isScrolled = window.scrollY > 50;
   }
 }

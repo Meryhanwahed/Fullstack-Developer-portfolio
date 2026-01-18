@@ -9,14 +9,13 @@ import { CommonModule } from '@angular/common';
 export class Hero implements AfterViewInit {
   @ViewChild('typewriterText') typewriterElement!: ElementRef<HTMLHeadingElement>;
 
-  // النصوص اللي هتظهر بالـ Typewriter effect
   roles = ["Fullstack Developer", "Angular Specialist", ".NET Core Expert", "Web Enthusiast"];
   roleIndex = 0;
   charIndex = 0;
   isDeleting = false;
-  typingSpeed = 100; // سرعة الكتابة بالملي ثانية
-  deletingSpeed = 50; // سرعة المسح
-  delayBetweenRoles = 2000; // التأخير قبل ما يبدأ يكتب دور جديد
+  typingSpeed = 100;
+  deletingSpeed = 50;
+  delayBetweenRoles = 2000;
 
   ngAfterViewInit(): void {
     this.type();
@@ -27,7 +26,6 @@ export class Hero implements AfterViewInit {
     const currentText = this.typewriterElement.nativeElement.innerText;
 
     if (!this.isDeleting) {
-      // لو لسه بيكتب
       this.typewriterElement.nativeElement.innerText = currentRole.substring(0, this.charIndex + 1);
       this.charIndex++;
       if (this.charIndex === currentRole.length) {
@@ -36,7 +34,6 @@ export class Hero implements AfterViewInit {
         return;
       }
     } else {
-      // لو بيمسح
       this.typewriterElement.nativeElement.innerText = currentRole.substring(0, this.charIndex - 1);
       this.charIndex--;
       if (this.charIndex === 0) {

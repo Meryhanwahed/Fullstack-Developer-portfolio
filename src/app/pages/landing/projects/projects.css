@@ -2,7 +2,6 @@
   background-color: #0b0e14;
 }
 
-/* Project Card Styling */
 .project-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -18,7 +17,6 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-/* Image Container & Overlay */
 .project-img-container {
   position: relative;
   height: 220px;
@@ -56,7 +54,6 @@
   transform: translateY(0);
 }
 
-/* Project Info */
 .project-info {
   padding: 25px;
 }
@@ -75,7 +72,6 @@
   margin-bottom: 20px;
 }
 
-/* Tech Badges */
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +88,6 @@
   border: 1px solid rgba(34, 211, 238, 0.2);
 }
 
-/* Custom Cyan Button */
 .btn-cyan {
   background: #22d3ee;
   color: #0b0e14;

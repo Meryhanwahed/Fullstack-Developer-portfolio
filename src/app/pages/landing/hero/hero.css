@@ -3,14 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0b0e14; /* نفس لون الخلفية الأساسي */
+  background-color: #0b0e14; 
   color: #e2e8f0;
-  padding: 100px 0 50px; /* Adjust for header */
+  padding: 100px 0 50px;
   position: relative;
-  overflow: hidden; /* عشان لو فيه أي أنيميشن يطلع بره الإطار */
+  overflow: hidden;
 }
 
-/* Backgroud Glow Effect (اختياري، يدي عمق) */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -32,13 +31,12 @@
 
 .container {
   position: relative;
-  z-index: 1; /* عشان يظهر فوق الـ Glow */
+  z-index: 1;
 }
 
-/* صورة البروفايل والـ Neon Border */
 .profile-area {
   position: relative;
-  width: 200px; /* حجم الصورة */
+  width: 200px;
   height: 200px;
   margin: 0 auto 3rem;
 }
@@ -50,7 +48,7 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
-  box-shadow: 0 0 25px rgba(34, 211, 238, 0.3); /* ظل خفيف للصورة */
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.3);
 }
 
 .profile-pic {
@@ -62,13 +60,13 @@
 
 .neon-border {
   position: absolute;
-  top: -5%; /* بيتحكم في المسافة بين الصورة والتوهج */
+  top: -5%;
   left: -5%;
   width: 110%;
   height: 110%;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(34, 211, 238, 0.7) 0%, rgba(34, 211, 238, 0) 70%);
-  filter: blur(15px); /* التوهج */
+  filter: blur(15px);
   animation: neon-pulse 3s infinite alternate ease-in-out;
   z-index: 1;
 }
@@ -80,7 +78,6 @@
 }
 
 
-/* النصوص */
 .greeting {
   font-size: 1.2rem;
   color: #94a3b8;
@@ -99,7 +96,7 @@
   font-size: 1.8rem;
   color: #22d3ee;
   font-weight: 600;
-  min-height: 2.2rem; /* عشان ميحصلش Shift لما النص يخلص كتابه */
+  min-height: 2.2rem;
 }
 
 .description {
@@ -109,7 +106,6 @@
   color: #a0aec0;
 }
 
-/* الأزرار */
 .btn-primary-neon {
   background-color: #22d3ee;
   color: #0b0e14;

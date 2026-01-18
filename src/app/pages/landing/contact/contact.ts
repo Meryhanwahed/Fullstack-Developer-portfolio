@@ -17,6 +17,5 @@ export class Contact {
   onSubmit() {
     console.log('Form Submitted!', this.formData);
     alert('Thank you, Hesham will receive your message soon!');
-    // هنا تقدري تربطي مع EmailJS أو أي Backend API
   }
 }
